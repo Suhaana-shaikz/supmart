@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+
+<style>
+
+  .suhana{
+
+
+    padding-left: 10px;
+
+    padding-bottom: 5px;
+
+
+
+  }
+
+.textarea{
+
+  scrollbar-width: none;
+  width: 170px;
+  overflow: hidden;
+  height:20px;
+ 
+
+  
+}
+
+@media(max-width:767px){
+
+.cardcontainer{
+
+
+  padding:auto;
+  gap: auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  background-color: blueviolet;
+}
+
+h1{
+  text-size-adjust: auto;
+}
+    
+}
+
+
+
+
+</style>
+<body class="bg-[url('/image.png')] blur-3xl bg-cover bg-center h-screen ">
+    <h1 class="text-white underline  font-serif text-3xl flex  justify-center hover:text-red-400">Let's view your picked items here</h1>
+
+
+
+    <div class="cardcontainer flex  justify-center items-center flex-wrap gap-3 p-12"></div>
+    <div class="flex justify-center items-center gap-5 ">
+         <button class="bg-red-500 hover:bg-red-600 px-2 py-1 font-semibold text-white rounded"  onclick="clearitems()">clearitems</button>
+         <button class="bg-green-500 hover:bg-green-600 px-2 py-1 font-semibold text-white rounded" onclick="additems()" > <a href="index.html">Add Item</a></button>
+    </div>
+    <script>
+
+
+
+function display_items(){
+      let card_container=document.querySelector('.cardcontainer');
+
+      
+       card_container.innerHTML = '';
+
+       let dashboarditems= JSON.parse(localStorage.getItem('items'))||[];
+
+       
+
+
+
+       if (dashboarditems.length === 0) {
+        card_container.innerHTML = '<h1 class="text-white text-xl">No items available.</h1>';
+        return;
+      }    
+      dashboarditems.forEach((el, index ) => {
+        const card = document.createElement('div');
+        card.className = "suhana border-2 border-gray-300 w-20 text-white rounded-lg ";
+
+        card.innerHTML = `
+          <p><span class="font-semibold text-sm ">Item Name  :</span>${el.itemName}</p>
+          <p><span>Category   :</span>${el.category}</p>
+          <p><span>Price   :</span>${el.cost}</p>
+          <p><span>Quantity   :</span> ${el.quantity}</p>
+          <p class="mb-4  textarea"><span>Description   :</span> ${el.Description}</p>
+          <button class="delete bg-red-500 hover:bg-red-600 rounded" onclick="deleteitem(${index})">delete</buttton>
+          `
+       
+        card_container.appendChild(card);
+      });
+    }
+    display_items();
+
+
+function deleteitem(index){
+
+  let dashboarditems=JSON.parse(localStorage.getItem('items'))||[]
+  dashboarditems.splice(index,1)
+  localStorage.setItem('items',JSON.stringify(dashboarditems));
+  display_items()
+}
+
+function clearitems(){
+    localStorage.removeItem('items')
+    display_items()
+    
+}
+ 
+
+  
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

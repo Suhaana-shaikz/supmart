@@ -1,0 +1,793 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<style>
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+   
+    .pseudo::after{
+        content: "World";
+        color: red;
+    
+    }
+    .pseudo-one::before{
+        content: ' "Freshness';
+        color:green;
+    }
+    
+
+
+    
+
+    @media (min-width:768px) and (max-width:1024px){
+
+
+        
+    .buttonsbox{
+
+display: flex;
+flex-wrap: wrap;
+size: auto;
+gap: 10px;
+}
+
+
+
+        .heading{
+
+margin: 0%;
+padding: 0%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: auto;
+}
+
+
+        #nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0%;
+            margin: 0%;
+            height: auto;
+        }
+        .navone{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 110px;
+            margin: 0%;
+            padding: 0%;
+        }
+        .navtwo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0%;
+            padding: 0%;
+            color:black
+        }
+        .navthree{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .bodyone{
+
+            width:80%;
+            height: auto;
+            padding: 0px;
+        }
+        .bodytwo{
+
+            padding-top: 20px;
+            padding-right: 0px;
+            padding-left: 5px;
+            height: auto;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+        .itemone{
+            margin: left 5px; 
+            margin-right:20px ;
+            margin-top: 0%;
+            height: auto;
+        }
+       .oneitem{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+       }
+       .twoitems{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0%;
+        padding: 0%;
+        height: auto;
+       }
+       .createitem{
+        margin: 0%;
+        padding: 0%;
+        height: auto;
+       }
+       .itemtwo{
+        margin-right: 28px;
+       }
+       .inputone{
+        width: 384px;
+       }
+       .itemthree{
+        margin-right: 62px;
+       }
+       .itemfour{
+        margin-right: 33px;
+       }
+       .inputtwo{
+        width: 384px;
+       }
+       .itemfive{
+        margin-right:20px;
+        height: auto;
+        padding: 0%;
+        display: block;
+        margin-left: 10px;
+        left: 0px;
+
+       }
+       .inputthree{
+        width: 384px;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+        
+       }
+    }
+
+
+    @media (max-width:767px){
+
+
+         #nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0%;
+            margin: 0%;
+            height: auto;
+        } 
+        
+        .store{
+
+            display: none;
+        }
+
+        .navone{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 100px;
+            margin: 0%;
+            padding: 2px;
+        }
+
+        .navtwo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0%;
+            padding: 0%;
+            color:black
+        }
+        .navthree{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .bodyone{
+
+            width:80%;
+            height: auto;
+            padding: 0px;
+            background-color: cadetblue;
+            margin: 0%;
+
+        }
+        .bodytwo{
+
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+            height: auto;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        
+            
+
+        }
+        .itemone{
+            margin: left 5px; 
+            margin-right:20px ;
+            margin-top: 0%;
+            height: auto;
+        }
+       .oneitem{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+       }
+       .twoitems{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0%;
+        padding: 0%;
+        height: auto;
+       }
+       .createitem{
+        margin: 0%;
+        padding: 0%;
+        height: auto;
+       }
+       .itemtwo{
+        margin-right: 28px;
+       }
+       .inputone{
+        width: 100%;
+        margin-left: 10px;
+
+        margin-top: 5px;
+        
+        border-top:none ;
+        border-left: none;
+        border-right: none;
+       }
+       .itemthree{
+        margin-right: 62px;
+       }
+       .itemfour{
+        margin-right: 33px;
+       }
+       .inputtwo{
+        width:100%;
+        
+        margin-top: 5px;   
+        border-top:none ;
+        border-left: none;
+        border-right: none;
+       }
+       .itemfive{
+    
+        height: auto;
+        padding: 0%;
+        margin-right: 10px;
+       }
+       .inputthree{
+        width: 100%;
+        height: 50px;
+        padding: 0%;      
+        /* border-top:none ;
+        border-left: none;
+        border-right: none;     */
+        margin-left: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+          }
+       .quantity{
+        display: flex;
+        flex-direction: column;
+     
+       }
+       .inputtwo{
+        margin-left: 10px;
+        width: 98%;
+       }
+       .price{
+        display: flex;
+        flex-direction: column;     
+
+       }    
+.category{
+    display: flex;
+    flex-direction: column;
+    border-top:none ;
+    border-left: none;
+    border-right: none; 
+}
+#category{
+    margin-left: 10px;
+    margin-top:10px ;
+    width: 90%;
+}
+   .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .descript {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%; 
+    }
+
+    .descript textarea {
+        width: auto;
+    }
+
+    #item{
+
+        border-top:none ;
+    border-left: none;
+    border-right: none; 
+    margin-left: 10px;
+    width: 100%;
+
+    }
+
+    .heading{
+
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .buttonsbox{
+
+        display: flex;
+        flex-wrap: wrap;
+        size: auto;
+        gap: 10px;
+    }
+
+
+} 
+
+
+
+.dashboard{
+    transition: transform 0.3s ease , background-color 0.3s ease-in-out;
+    
+}
+
+.dashboard:hover{
+    transform: scale(1.05);
+    background-color: red;
+     
+
+}
+
+
+</style>
+<body>
+   
+
+    <div id="nav" class="h-20 bg-black text-white flex items-center justify-between relative">
+        <div class="pl-14 text-2xl text-left flex items-center heading"> 
+             <div><i class="ri-shopping-cart-2-line  text-green-800"></i></div>
+
+             <div class="pseudo text-3xl text-green-800">Grocery</div>
+        </div>
+        <div class="flex items-center flex-end pr-28 gap-5 navone  ">
+                 
+                   <div class="text-xl text-white pseudo-one"> meets at your fingertips<span class="text-green-700"> "</span></div>
+
+                    <div class="size-10  flex justify-center items-center mode " onclick="mode()"><i class="ri-moon-line text-2xl text-gray-400"></i></div>
+                    <div class="text-white text-xl store">Store</div>
+        </div>
+
+
+    </div>
+    <div class="bg-white-700 h-8 flex justify-between font-semibold items-center navtwo">
+        <div>
+                 <!-- <i class="ri-menu-fill ml-16  cursor-pointer  " id="menu" onclick="toggledisplay()"></i> -->
+                 <!-- <p class="hidden inset-0 bg-gray-700 w-60 m-0 h-96" id="hello">hello</p> -->
+
+                <button> <a href="/src/dashboardpage.html" class="bg-blue-600 text-white dashboard">Go to Dashboard =></a></button>
+        </div>
+        
+        <div class="mr-20 flex navthree">
+                <div>Admin/</div>
+                <div>Dashboard</div>
+        </div>
+
+
+    </div>
+
+    <div class="bg-[url('/src/image.png')] h-[580px] bg-cover flex justify-start pl-10 items-center bgimg relative">
+        
+        <div class="absolute bg-opacity-100 h-[500px] w-[900px] rounded-xl border-2 border-black flex justify-center items-center bodyone  ">
+
+      
+                     <div class="flex flex-col gap-6 pt-10 pl-10 pr-10 h-[400px] w-[700px] bg-white text-black bodytwo">
+                                                  
+
+
+                                                        <div class="text-3xl font-bold createitem  text-black flex justify-start"> Create Your own item</div>
+                                                        <div class="flex flex-col gap-3">
+                                                                <div class="flex flex-col gap-3 twoitems  ">
+
+                                                                  <div class=" bg-white flex oneitem">  
+                                                                        
+                                                                        <div>
+    
+                                                                              <form>
+                                                                                 <label for="item" class="mt-3 mb-3 ml-3 mr-16 text-gray-700 font-semibold itemone">Item name:</label>
+
+                                                                              </form>
+                                                                        </div>
+
+                                                                        <div>
+
+
+                                                                                 <input type="text" placeholder="Enter your item" class="border-2 border-gray-300 w-96" id="item">
+                                                                        </div>
+                                                                  </div> 
+                                    
+                                                                    <div class=" bg-white flex category">  
+
+                                                                       <div>
+                                                                          <form>
+                                                                              <label for="category" class="mt-3 ml-3 mb-3 mr-20 text-gray-700 font-semibold itemtwo" >Category :</label>
+                                                                           <form>
+                                                                       </div>
+
+                                                                        <div>
+                                                                          <select class="border-2 border-gray-300 w-96" id="category">
+                                                                            <option value="select your category" >select your category</option>
+                                                                            <option value="Vegetebles" >Vegetables</option>
+                                                                            <option value="Fruits" >Fruits</option>
+                                                                            <option value="Beverages" >Beverages</option>
+                                                                            <option value="Dairy" >Dairy</option>
+                                                                          </select>
+                                                                        </div> 
+                                                                   </div>
+                                                                </div>
+
+                                                                                
+                                                                                 <div class=" bg-white flex price">  
+                                                                                    <div>
+                                                                                     <form>
+                                                                                         <label for="price" class="mt-3 ml-3 mb-3 mr-28  text-gray-700 font-semibold itemthree">Price:</label>
+                                                                                    
+                                                                                    </form>
+                                                                                     </div>
+
+                                                                                    <div>
+                                                                                         <input type="text" placeholder="Enter your item's price" id="price" class=" border-2 border-gray-300 w-96 inputone">
+
+                                                                                    </div>
+                                                                                  </div> 
+                                                                                  <div class=" bg-white flex  quantity"> 
+                                                                                    <div>
+                                                                                     <form>
+                                                                                         <label for="quantity" class="mt-3 ml-3 mb-3 mr-20   text-gray-700 font-semibold itemfour">Quantity:</label>
+                                                                                    </form>
+                                                                                    </div>
+
+                                                                                     <div><input type="text" placeholder="Enter your Quantity in kgs/litres" id="quantity" class=" border-2 border-gray-300 w-96 inputtwo"></div>
+                                                                                         
+
+
+                                                                                    
+                                                                                  </div>
+
+                                                                                    <div class="flex items-center bg-white">
+                                                                                        <div class="flex items-center descript">
+
+                                                                                            <div>
+                                                                                               <label for="itemDescription" class="font-semibold mr-16 ml-3 text-gray-700 itemfive bg-white">Description:</label>
+                                                                                            </div>
+                                                                                            <div>
+
+                                                                                              <textarea id="itemDescription" class="border-2 border-gray-300 w-96 bg-white  inputthree" placeholder="Enter item description"></textarea>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                        
+                                                                                      
+                                                                                  
+                                                        </div>              
+
+                                                        <div class=" flex gap-16  mb-3 justify-center shrink-0 flex-wrap buttonsbox ">
+                             
+                                                            <button class="bg-yellow-500 hover:bg-yellow-600 px-2 py-1 font-semibold text-black rounded" onclick="clearform()">Clear form</button>
+                                                            <button class="bg-red-500 hover:bg-red-600 px-2 py-1 font-semibold text-white rounded" onclick="clearitems()">Clear items</button>
+                                                   
+                                                            <button  class="bg-blue-500 hover:bg-blue-600 px-2 py-1 font-semibold text-white rounded" onclick="submit()">submit</button>
+
+
+
+
+                                                        </div>
+
+
+                    </div> 
+
+        </div>
+    </div>
+
+    <script>
+
+
+function additems(){
+
+let price=document.querySelector('#price').value;
+let textarea=document.querySelector('#itemDescription').value;
+let item=document.querySelector('#item').value;
+let quantity=document.querySelector('#quantity').value;
+let category=document.querySelector('#category').value;
+
+if (price === '' || textarea === ''|| item === '' || quantity === '' || category ==='select your category'){
+    alert(" please fill all fields are required ")
+    return;
+    
+}
+
+if (isNaN(price)||isNaN(quantity)||price<=0||quantity<=0 ){
+    alert("please enter valid number")
+    return;
+}
+
+let storeditem= {
+
+itemName:item,
+Description:textarea,
+cost:price,
+quantity:quantity,
+category:category
+};
+let getitems=JSON.parse(localStorage.getItem('items'))||[];
+
+
+let duplicateitem= getitems.some((el)=>{
+   return el.itemName === storeditem.itemName;
+})
+if (duplicateitem){
+    alert("Item already added...  add another item")
+}
+else {
+
+
+    getitems.push(storeditem)
+localStorage.setItem('items',JSON.stringify(getitems));
+
+console.log(getitems);
+
+alert("item added successfully")
+
+}
+
+
+
+}
+
+
+
+
+
+function clearform() {
+   
+     document.querySelector('#price').value = '';
+     document.querySelector('#itemDescription').value = '';
+     document.querySelector('#item').value = '';
+     document.querySelector('#quantity').value = '';
+     document.querySelector('#category').value = 'select your category';
+    alert ("Form data cleared successfully")
+}
+
+function submit(){
+    let price=document.querySelector('#price').value;
+let textarea=document.querySelector('#itemDescription').value;
+let item=document.querySelector('#item').value;
+let quantity=document.querySelector('#quantity').value;
+let category=document.querySelector('#category').value;
+
+if (price === '' || textarea === ''|| item === '' || quantity === '' || category ==='select your category'){
+    alert(" please fill all fields are required ")
+    return;
+    
+}
+
+if (isNaN(price)||isNaN(quantity)||price<=0||quantity<=0 ){
+    alert("please enter valid number")
+    return;
+}
+
+let storeditem= {
+
+itemName:item,
+Description:textarea,
+cost:price,
+quantity:quantity,
+category:category
+};
+let getitems=JSON.parse(localStorage.getItem('items'))||[];
+
+
+let duplicateitem= getitems.some((el)=>{
+   return el.itemName === storeditem.itemName;
+})
+if (duplicateitem){
+    alert("Item already added...  add another item")
+}
+else {
+
+
+getitems.push(storeditem)
+localStorage.setItem('items',JSON.stringify(getitems));
+
+console.log(getitems);
+
+confirm("Thank You for filling the form ....! let check your Dashboard")
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+function clearitems(){
+    localStorage.removeItem('items')
+
+    confirm("items are cleared in dasboard")
+    
+    
+}
+
+
+function mode(){
+
+
+
+let mode=document.querySelector('.mode');
+
+let navtwo=document.querySelector('.navtwo');
+navtwo.classList.toggle("bg-black")
+navtwo.classList.toggle("text-white")
+
+let bodyone=document.querySelector('.bodyone')
+
+bodyone.classList.toggle("bg-gray-900");
+
+                                                                     
+
+
+
+// let bodytwo=document.querySelector('.bodytwo')
+
+// bodytwo.classList.toggle("bg-black")
+
+
+
+
+
+
+
+
+
+
+
+// let bodytwo =document.querySelector('.bodytwo');
+// bodytwo.className="flex flex-col bg-gray-00 gap-6 pt-10 pl-10 pr-10 h-[400px] w-[1200px] bg-gray-500 text-white"
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+//     </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+  category.addEventListener("change",()=>{
+    let selectedcategory=category.value;
+    
+    localStorage.setItem("selectedcategory", JSON.stringify(selectedcategory))
+    
+    let storedcategory= JSON.parse( localStorage.getItem('selectedcategory'))
+    
+    console.log(storedcategory)
+        }) -->
+
+</body>
+</html>
